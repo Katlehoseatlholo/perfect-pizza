@@ -45,24 +45,34 @@
       display: inline-block;
       width: 30%;
       margin: 10px;
-      max-height: fit-content;
+      max-height: auto;
       padding: 10px;
     }
+
+    .footer {
+      background-color: greenyellow;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 10px;
+      max-height: fit-content;
+      padding: 10px;
+      font-size: 18px;
+    }
+
     .footer-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px;
-}
+      display: flex;
+      align-items: center;
+    }
 
-.footer-div i {
-  margin-right: 5px;
-}
+    .footer-div i {
+      margin-right: 5px;
+    }
 
-.footer-div1 {
-  text-align: right;
-  font-size: 18px;
-}
+    .footer-div1 {
+      text-align: right;
+    }
 
 
     .menu-container3 {
@@ -70,7 +80,7 @@
       display: inline-block;
       width: 30%;
       margin: 10px;
-      max-height: fit-content;
+      max-height: auto;
       padding: 10px;
     }
 
@@ -96,14 +106,6 @@
       }
     }
 
-    .footer {
-      background-color: greenyellow;
-      display: flex;
-      width: 100%;
-      margin: 10px;
-      max-height: fit-content;
-      padding: 10px;
-    }
 
     .image1 {
       object-fit: fill;
@@ -271,29 +273,23 @@
           </div>
         </div>
       </div>
+
       <footer class="footer">
-        <div class="footer">
-          <div class="footer-div">
-            <div>
-              <i class="fas fa-map-marker-alt"></i>
-              UJ JBS PARK
-            </div>
-            <div>
-              <i class="fas fa-phone-alt"></i>
-              07636539578
-            </div>
-            <div>
-              <i class="fas fa-envelope"></i>
-              info@perfectpizza.com
-            </div>
+        <div class="footer-div">
+          
+          <div>
+            <i class="fas fa-map-marker-alt"></i> 123 JBSPARK AUCKLANDPARK
           </div>
-          <div class="footer-div1">
-            &copy; 2023 Perfect Pizza
+          <div>
+            <i class="fas fa-envelope"></i> info@perfectpizza.com
           </div>
         </div>
-        
+        <div class="footer-div1">
+          <span>&copy; 2023 Perfect Pizza</span>
+        </div>
       </footer>
-       </main>
+
+  </main>
 </body>
 
 </html>
