@@ -6,20 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Perfect Pizza</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-2JzjtvCZQVX+76nkeDY7VhdSBwYKj7V8yIHk1F7V+Ml+C34NQ2we/Qqm0BxLbFnP/EGpKmhzMJ/ECz1uV7miNw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
     body {
-      background-color: #1c77b8;
+
+      background-image: url("images/pizza.jpg");
+      background-size: contain;
+      background-position: center;
+
+
     }
 
     .header {
       text-align: center;
-      
-      position:relative;
-        top: 0px;
-        background-color: aqua;
-        right: 0px;}
-        
-    
+
+      position: relative;
+      top: 0px;
+      background-color: aqua;
+      right: 0px;
+    }
+
+
 
     .menu-container1 {
       background-color: yellow;
@@ -38,14 +48,22 @@
       max-height: fit-content;
       padding: 10px;
     }
-
     .footer-div {
-      text-align: left;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
 
-    .footer-div1 {
-      text-align: right;
-    }
+.footer-div i {
+  margin-right: 5px;
+}
+
+.footer-div1 {
+  text-align: right;
+  font-size: 18px;
+}
+
 
     .menu-container3 {
       background-color: rgb(235, 13, 116);
@@ -55,25 +73,32 @@
       max-height: fit-content;
       padding: 10px;
     }
-/* CSS for small screens (less than 768px) */
-@media screen and (max-width: 767px) {
-  .menu-container1, .menu-container2, .menu-container3 {
-    display: block;
-    width: 100%;
-  }
-}
 
-/* CSS for large screens (960px or wider) */
-@media screen and (min-width: 960px) {
-  .menu-container1, .menu-container2, .menu-container3 {
-    display: inline-block;
-    width: 30%;
-  }
-}
+    /* CSS for small screens (less than 768px) */
+    @media screen and (max-width: 767px) {
+
+      .menu-container1,
+      .menu-container2,
+      .menu-container3 {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    /* CSS for large screens (960px or wider) */
+    @media screen and (min-width: 960px) {
+
+      .menu-container1,
+      .menu-container2,
+      .menu-container3 {
+        display: inline-block;
+        width: 30%;
+      }
+    }
 
     .footer {
       background-color: greenyellow;
-      display: inline-block;
+      display: flex;
       width: 100%;
       margin: 10px;
       max-height: fit-content;
@@ -81,7 +106,7 @@
     }
 
     .image1 {
-      object-fit: cover;
+      object-fit: fill;
     }
 
     .container {
@@ -111,17 +136,21 @@
       font-size: 18px;
       margin-bottom: 10px;
     }
-.est{
-  text-align: center;
-}
+
+    .est {
+      text-align: center;
+    }
+
     .description {
       font-size: 16px;
     }
-    .main-image{
+
+    .main-image {
       min-width: 10%;
-    max-width: 20%;
-    min-height: 10%;
-    max-height: 20%;}
+      max-width: 20%;
+      min-height: 10%;
+      max-height: 20%;
+    }
   </style>
 </head>
 
@@ -131,10 +160,13 @@
       <div class="header">
         <h1><b>Pizza e'Vino</b></h1>
         <p class="est">est 2023</p>
-        <img class="main-image" src="https://plus.unsplash.com/premium_photo-1673823195780-8444a76cfde6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+        <img class="main-image"
+          src="https://plus.unsplash.com/premium_photo-1673823195780-8444a76cfde6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
       </div>
       <hr />
+      <p><i><span><b>Todays deals </b></span></i></p>
       <div class="menu-container1">
+
         <div class="container">
           <img class="image"
             src="https://thumbs.dreamstime.com/b/pizza-rustic-italian-mozzarella-cheese-basil-leaves-35669930.jpg" />
@@ -185,22 +217,83 @@
           </div>
         </div>
       </div>
+
+      <hr />
+      <p><i><span><b>Specials </b></span></i></p>
+      <div class="menu-container1">
+
+        <div class="container">
+          <img class="image" src="https://debonairspizza.co.za/images/menu/sides/death-by-chocolate.png" />
+          <div class="menu-item">
+            <h2><b>Desserts</b></h2>
+          </div>
+          <div class="price">
+            <h2><b>R38.99</b></h2>
+          </div>
+          <div class="description">
+            Chocolate latte cookies for your snacking moments
+          </div>
+        </div>
+
+      </div>
+      <div class="menu-container2">
+        <div class="container">
+          <img class="image"
+            src="https://harassedmom.co.za/wp-content/uploads/2016/11/46355-Debonairs-600th-store-opening_PR-Images15.jpg" />
+          <div class="menu-item">
+            <h2><b>Donut Dipps</b></h2>
+          </div>
+          <div class="price">
+            <h2><b>R32.99</b></h2>
+          </div>
+          <div class="description">
+            Delicious Donut Dipps for yummy snacking momments for your sweat tooth!!
+          </div>
+        </div>
+
+      </div>
+      <div class="menu-container3">
+        <div class="container">
+          <img class="image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8fKEk9ewdL8rrpaGaOnmWir-xWYIYvtExRMj8HxW07nNPm_NDIIw88PEffUinHuSO-g4&usqp=CAU" />
+          <div class="menu-item">
+            <h2><b>Wingssssssss</b></h2>
+          </div>
+          <div class="price">
+            <h2><b>R109.99</b></h2>
+          </div>
+          <div class="description">
+            12 buffalo wings for you and friends or yourself.
+            <ul>
+              <li>Lemon toppings</li>
+              <li>Fire Sauce dipp</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <footer class="footer">
-        <div class="footer-div">
-          <p class="text1"><b>Contact us on: (+27) 0778353823</b></p>
-          <p><b>instagram/kay</b></p>
-          <p><b>twitter/pizza</b></p>
-          <p><b>@perfectpizza</b></p>
+        <div class="footer">
+          <div class="footer-div">
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              UJ JBS PARK
+            </div>
+            <div>
+              <i class="fas fa-phone-alt"></i>
+              07636539578
+            </div>
+            <div>
+              <i class="fas fa-envelope"></i>
+              info@perfectpizza.com
+            </div>
+          </div>
+          <div class="footer-div1">
+            &copy; 2023 Perfect Pizza
+          </div>
         </div>
-        <div class="footer-div1">
-          <p class="text"><b>Pizza Plaza</b></p>
-          <p><b>JBS PARK</b></p>
-          <p><b>AucklandPark</b></p>
-        </div>
+        
       </footer>
-
-
-  </main>
+       </main>
 </body>
 
 </html>
